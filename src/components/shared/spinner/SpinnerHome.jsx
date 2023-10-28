@@ -1,5 +1,5 @@
 import React from 'react';
-import { MutatingDots, Puff } from 'react-loader-spinner';
+import { Puff } from 'react-loader-spinner';
 
 const SpinnerHome = () => {
     return (

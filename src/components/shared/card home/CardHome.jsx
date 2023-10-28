@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 //function
 import { discountCount } from '../function';
@@ -11,13 +12,13 @@ import styled from "./CardHome.module.css";
 
 const CardHome = ({ product }) => {
 
-    const { title, thumbnail: image, brand, price, rating, discountPercentage } = product;
+    const { title, thumbnail: image, brand, price, rating, discountPercentage ,id } = product;
 
     return (
         <div className={ styled.cardHome } >
             
             <div className={ styled.cardHomeField1 } >
-                <img src={image} alt="product photo" />
+                <Link to={ `/details/${id}` } ><img src={image} alt="product photo" /></Link>
                 <span> {brand} </span>
                 <span> {discountPercentage} % </span>
             </div>

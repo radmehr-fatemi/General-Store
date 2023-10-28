@@ -12,16 +12,16 @@ const NavbarWindows = () => {
         <div className={styled.navbarWindows} >
             
             <div className={styled.navbarField1} >
-                <Link>Home</Link>
-                <Link>List</Link>
+                <Link to="/" >Home</Link>
+                <Link to="/list" >List</Link>
             </div>
 
             <div className={ styled.navbarField2 } >
-                <Link> <h1>General Store</h1> </Link>
+                <Link to="/home" > <h1>General Store</h1> </Link>
             </div>
 
             <div className={ styled.navbarField3 } >
-                <img src={cartSVG} alt="cart photo" />
+                <Link to="/cart" ><img src={cartSVG} alt="cart photo" /></Link>
             </div>
 
         </div>

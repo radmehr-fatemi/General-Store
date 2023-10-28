@@ -1,0 +1,25 @@
+  .swiper {
+    width: 90vw;
+    height: 30vh;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .swiper-slide img {
+    @apply
+    h-48 md:h-72
+  }
+
+  /* ------------768px--------- */
+  @media ( min-width: 769px ) {
+    .swiper {
+        width: 60vw;
+        height: 46vh;
+    }
+  }

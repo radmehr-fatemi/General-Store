@@ -6,7 +6,8 @@
     sticky
     top-0
     max-w-screen-2xl
-    m-auto
+    w-screen
+    mx-auto
     justify-between
     items-center
     /* bg-blue-600 */

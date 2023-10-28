@@ -15,7 +15,6 @@ import listFocusSVG from "../../assets/svg/list-focus.svg"
 const SideBar = () => {
 
     const { pathname } = useLocation();
-    console.log(pathname)
 
     return (
         <div className={styled.sideBar} >

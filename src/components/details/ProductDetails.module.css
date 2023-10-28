@@ -1,0 +1,145 @@
+.productDetails {
+    height: calc( 100vh - 86px );
+    @apply
+    w-screen
+    max-w-screen-2xl
+    flex
+    flex-col
+    justify-start
+    bg-blue-300
+    text-center
+    px-2
+    md:h-screen
+}
+
+/* -------productDetailsField1------ */
+.productDetailsField1 img {
+    @apply
+    w-fit
+}
+
+.productDetailsField1 h2 {
+    @apply
+    text-2xl
+    my-2
+    font-bold
+}
+
+/* -------productDetailsField1------ */
+.productDetailsField2 {
+    @apply
+    text-center
+    py-2
+}
+
+.productDetailsField2 span {
+    @apply
+    text-blue-800
+    text-sm
+}
+
+/* -------productDetailsField3------ */
+.productDetailsField3 {
+    @apply
+    w-5/6
+    mx-auto
+    flex
+    justify-between
+    border-y-2
+    border-y-blue-500
+    py-1
+    mb-2
+}
+
+.productDetailsField3 span:nth-child(1) {
+    @apply
+    font-semibold
+    mb-2
+    h-full
+    flex
+    items-center
+}
+
+.productDetailsField3 img {
+    @apply
+    w-5
+    inline
+    ml-1
+}
+
+.productDetailsField3 span:nth-child(2) {
+    @apply
+    inline-flex
+    items-center
+    justify-center
+}
+
+/* ------productDetailsField4------- */
+.productDetailsField4 span:nth-child(1) {
+    @apply
+    bg-red-500
+    px-1
+    rounded-xl
+    text-white
+    text-sm
+}
+
+.productDetailsField4 span:nth-child(2) {
+    @apply
+    text-sm
+    line-through
+    ml-2
+    text-blue-900
+} 
+
+/* -------productDetailsField5------ */
+.productDetailsField5 {
+    @apply
+    text-green-700
+    text-xl
+}
+
+/* -------productDetailsField6------- */
+.productDetailsField6 {
+    @apply
+    m-3
+    h-28
+    w-5/6
+    mx-auto
+    flex
+    items-center
+    justify-center
+    transition-all
+}
+
+.productDetailsField6 button {
+    @apply
+    bg-purple-800
+    text-white
+    w-3/6
+    h-8
+    rounded-md
+    animate-ShowButton1
+    transition-all
+}
+
+.productDetailsField6Flex {
+    @apply
+    w-full
+    flex
+    flex-row-reverse
+    justify-around
+    items-center
+}
+
+.productDetailsField6Buttons {
+    @apply
+    flex
+    flex-col
+}
+
+.productDetailsField6Buttons button {
+    @apply
+    w-10
+    animate-ShowButton2
+}
