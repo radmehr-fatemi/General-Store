@@ -5,7 +5,22 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+
+      keyframes: {
+        animationOpacity:{
+          "0%": { opacity: '(0)' }
+        },
+        animationShowScroll: {
+          "0%": { transform:"translateY(100%)" }
+        }
+      },
+
+      animation: {
+        animationOpacity: "animationOpacity .2s forward",
+        animationShowScroll: "animationShowScroll .3s forwards"
+      }
+    },
   },
   plugins: [],
 }

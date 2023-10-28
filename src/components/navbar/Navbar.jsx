@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NavbarWindows = () => {
+const Navbar = () => {
     return (
         <div className=' hidden md:block' >
             Nav
@@ -8,4 +8,4 @@ const NavbarWindows = () => {
     );
 };
 
-export default NavbarWindows;
+export default Navbar;

@@ -1,0 +1,28 @@
+.sideBar {
+    @apply
+    max-w-md
+    w-screen
+    py-2
+     fixed 
+    bottom-0
+    bg-purple-500
+    flex
+    justify-between
+    items-center
+    animate-animationShowScroll
+    md:hidden
+}
+
+.sideBar img {
+    @apply
+    w-10
+}
+
+.list,
+.cart,
+.home {
+    @apply
+    w-3/12
+    flex
+    justify-center
+}
