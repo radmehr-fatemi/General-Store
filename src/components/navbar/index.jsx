@@ -6,10 +6,10 @@ import NavbarWindows from './NavbarWindows';
 
 const index = () => {
     return (
-        <div>
+        <>
             <NavbarMobile />
             <NavbarWindows />
-        </div>
+        </>
     );
 };
 

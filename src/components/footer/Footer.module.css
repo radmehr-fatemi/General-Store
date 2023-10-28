@@ -1,0 +1,11 @@
+.footer {
+    @apply
+    w-screen
+    max-w-screen-2xl
+    mb-16 md:mb-0
+    text-center
+    bg-gray-500
+    text-white
+    p-2
+}
+

@@ -1,16 +1,17 @@
 .navbarMobile {
-    background-color: #a955f731;
+    background-color: #a955f709;
     @apply
     md:hidden
     w-screen
     max-w-md
-    fixed
-    top-0
+    sticky
+    top-2
     flex
     flex-row-reverse
     justify-start
     p-2
     backdrop-blur-sm
+    animate-ShowScrollTop
 }
 
 .navbarMobile input {

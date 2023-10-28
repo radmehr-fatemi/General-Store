@@ -9,7 +9,7 @@
     flex
     justify-between
     items-center
-    animate-animationShowScroll
+    animate-ShowScroll
     md:hidden
 }
 
