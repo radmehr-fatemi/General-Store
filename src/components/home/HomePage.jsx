@@ -8,15 +8,16 @@ import { ProductsContext } from '../../context/ProductsContextProvider';
 
 //Component
 import CardHome from '../shared/card home/CardHome';
+import SpinnerHome from '../shared/spinner/SpinnerHome';
 
 const HomePage = () => {
 
     const { data, loading, error } = useContext(ProductsContext).state;
 
-    if (loading) return <h1>Loading...</h1>
+    if (loading) return <SpinnerHome />
     if (error) return <h1>Error...</h1>
 
-    if (data.products.length) {
+    if (data.products?.length) {
         const products = data.products;
         console.log(products)
 

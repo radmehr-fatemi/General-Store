@@ -18,13 +18,18 @@ export default {
 
         ShowScrollTop: {
           "0%": { transform:"translateY(-100%)" }
+        },
+
+        Show: {
+          "0%": { transform: "rotateY(90deg)" }
         }
       },
 
       animation: {
         animationOpacity: "animationOpacity .2s forward",
         ShowScroll: "ShowScroll .3s forwards",
-        ShowScrollTop: "ShowScrollTop .3s forwards"
+        ShowScrollTop: "ShowScrollTop .3s forwards",
+        Show: "Show .3s forwards",
       },
 
       boxShadow: {
