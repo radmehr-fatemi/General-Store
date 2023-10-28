@@ -5,7 +5,7 @@ import ProductsContextProvider from './context/ProductsContextProvider';
 
 //Component
 import HomePage from './components/home/HomePage';
-import Layout from './components/layout';
+import Layout from './components/layout/index';
 import SideBar from './components/sidebar/SideBar';
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
       <Layout>
         <HomePage />
       </Layout>
-        <SideBar />
+      <SideBar />
     </ProductsContextProvider>
   );
 };

@@ -1,11 +1,12 @@
 .sideBar {
     @apply
-    max-w-md
     w-screen
+    m-auto
     py-2
-     fixed 
+    fixed 
     bottom-0
-    bg-purple-500
+    right-0
+    bg-blue-600
     flex
     justify-between
     items-center

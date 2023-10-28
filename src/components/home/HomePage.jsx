@@ -1,7 +1,13 @@
 import React, { useContext } from 'react';
 
+//Style
+import styled from "./HomePage.module.css";
+
 //Context
 import { ProductsContext } from '../../context/ProductsContextProvider';
+
+//Component
+import CardHome from '../shared/card home/CardHome';
 
 const HomePage = () => {
 
@@ -14,9 +20,11 @@ const HomePage = () => {
         const products = data.products;
         console.log(products)
 
-        return products.map(product => <div key={product.id} >
-            <img src={product.images[2]} alt="" />
-        </div>)
+        return <div className={styled.homePage} >
+            {
+                products.map(product => <CardHome key={product.id} product={product} />)
+            }
+        </div>
     }
 }
 

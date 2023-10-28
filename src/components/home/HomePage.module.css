@@ -1,0 +1,12 @@
+.homePage {
+    @apply
+    max-w-screen-2xl
+    m-auto
+    flex
+    flex-wrap
+    justify-center
+    items-center
+    p-4
+    overflow-hidden
+    bg-blue-950
+}

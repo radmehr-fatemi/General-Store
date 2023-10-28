@@ -25,6 +25,10 @@ export default {
         animationOpacity: "animationOpacity .2s forward",
         ShowScroll: "ShowScroll .3s forwards",
         ShowScrollTop: "ShowScrollTop .3s forwards"
+      },
+
+      boxShadow: {
+        cartHome: "0px 2px 4px 0px rgb(137, 139, 190)",
       }
     },
   },

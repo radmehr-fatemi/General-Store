@@ -1,17 +1,17 @@
 import React from 'react';
-
-//Component
-import Navbar from '../navbar/index';
 import Footer from '../footer/Footer';
+import NavbarMobile from '../navbar/NavbarMobile';
+import NavbarWindows from '../navbar/NavbarWindows';
 
 const Layout = ({ children }) => {
     return (
-        <div>
-            <Navbar />
-            { children }
+        <>
+        <NavbarMobile />
+        <NavbarWindows />
+            {children}
             <Footer />
-        </div>
+        </>
     );
 };
 
-export default Layout;
+export default Layout

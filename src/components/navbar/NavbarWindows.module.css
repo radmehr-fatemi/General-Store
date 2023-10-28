@@ -1,12 +1,20 @@
 .navbarWindows {
+    background-color: rgba(0, 0, 255, 0.475);
+
     @apply
     hidden md:flex
+    sticky
+    top-0
+    max-w-screen-2xl
+    m-auto
     justify-between
     items-center
-    bg-purple-500
+    /* bg-blue-600 */
+    backdrop-blur-sm
     py-4
     animate-ShowScrollTop
     transition-all
+    z-50
 }
 
 .navbarField1,
@@ -35,6 +43,7 @@
 
 .navbarField2 {
     @apply
+    w-3/6
     text-4xl
 }
 

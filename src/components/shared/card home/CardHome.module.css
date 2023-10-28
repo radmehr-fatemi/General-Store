@@ -1,0 +1,84 @@
+.cardHome {
+    @apply
+    h-56
+    w-full md:w-5/12 lg:w-3/12
+    shadow-cartHome
+    rounded-xl
+    overflow-hidden
+    bg-white
+    relative
+    m-2
+}
+
+/* ------cardHomeField1------- */
+.cardHomeField1 img {
+    @apply
+    w-full
+    h-36
+}
+
+.cardHomeField1 span:nth-child(2) {
+    @apply
+    absolute
+    top-2
+    left-2
+    bg-black
+    text-white
+    backdrop-blur-lg
+    px-3
+    py-0
+    rounded-2xl
+    text-xs
+    font-bold
+}
+
+.cardHomeField1 span:nth-child(3) {
+    @apply
+    absolute
+    top-4
+    right-2
+    bg-red-600
+    rounded-xl
+    px-1
+    text-white
+}
+
+/* -------cardHomeField2------- */
+.cardHomeField2 {
+    @apply
+    flex
+    justify-between
+    px-2
+    py-1
+}
+
+.cardHomeField2 p {
+    @apply
+    font-bold
+}
+
+.cardHomeField2 img {
+    @apply
+    w-5
+    inline
+}
+
+/* -------cardHomeField3------- */
+.cardHomeField3 {
+    @apply
+    flex
+    flex-col
+    px-2
+}
+
+.cardHomeField3 span:nth-child(1) {
+    @apply
+    text-sm
+    line-through
+    text-gray-500
+}
+
+.cardHomeField3 span:nth-child(2) {
+    @apply
+    text-green-600
+}
