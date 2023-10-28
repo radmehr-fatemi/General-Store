@@ -10,6 +10,7 @@ import styled from "./ProductDetails.module.css";
 
 //SVG
 import starSVG from "../../assets/svg/star.svg";
+import trashSVG from "../../assets/svg/trash.svg";
 
 //function
 import { discountCount, findQuantity } from '../shared/function';
@@ -77,7 +78,7 @@ const ProductDetails = () => {
                             <div className={styled.productDetailsField6Buttons} >
                                 {findQuantity(id, state.selectedItems) > 0 && <button onClick={() => dispatch({ type: "INCREMENT", payload: data })} >+</button>}
                                 <span> {findQuantity(id, state.selectedItems)} </span>
-                                {findQuantity(id, state.selectedItems) === 1 && <button onClick={() => dispatch({ type: "REMOVE_ITEM", payload: data })} >R</button>}
+                                {findQuantity(id, state.selectedItems) === 1 && <button onClick={() => dispatch({ type: "REMOVE_ITEM", payload: data })} ><img src={ trashSVG } alt="trash photo" /></button>}
                                 {findQuantity(id, state.selectedItems) > 1 && <button onClick={() => dispatch({ type: "DECREMENT", payload: data })} >-</button>}
                             </div>
                         </div>

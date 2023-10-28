@@ -143,3 +143,9 @@
     w-10
     animate-ShowButton2
 }
+
+.productDetailsField6Buttons img {
+    @apply
+    w-full
+    h-full
+}
