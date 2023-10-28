@@ -1,0 +1,4 @@
+.navbarWindows {
+    @apply
+    hidden md:block
+}

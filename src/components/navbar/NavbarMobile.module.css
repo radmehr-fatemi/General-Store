@@ -1,0 +1,23 @@
+.navbarMobile {
+    background-color: #a955f731;
+    @apply
+    md:hidden
+    w-screen
+    max-w-md
+    fixed
+    top-0
+    flex
+    flex-row-reverse
+    justify-start
+    p-2
+    backdrop-blur-sm
+}
+
+.navbarMobile input {
+    @apply
+    w-5/6
+    m-auto
+    rounded-lg
+    p-1
+    outline-none
+}
