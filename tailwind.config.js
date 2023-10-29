@@ -34,7 +34,12 @@ export default {
 
         ShowButton2: {
           "0%": { width: "50px" }
-        }
+        },
+        
+        ShowButton3: {
+          "0%": { width: "0px" }
+        },
+
       },
 
       animation: {
@@ -45,6 +50,7 @@ export default {
         ShowOpacity: "ShowOpacity .3s forwards",
         ShowButton1: "ShowButton1 .3s forwards",
         ShowButton2: "ShowButton2 .3s forwards",
+        ShowButton3: "ShowButton3 .3s forwards",
       },
 
       boxShadow: {

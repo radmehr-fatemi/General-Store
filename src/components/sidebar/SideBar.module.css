@@ -17,6 +17,7 @@
 .sideBar img {
     @apply
     w-10
+    animate-ShowButton3
 }
 
 .list,

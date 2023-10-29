@@ -17,7 +17,7 @@ const NavbarWindows = () => {
             </div>
 
             <div className={ styled.navbarField2 } >
-                <Link to="/home" > <h1>General Store</h1> </Link>
+                <Link to="/" > <h1>General Store</h1> </Link>
             </div>
 
             <div className={ styled.navbarField3 } >

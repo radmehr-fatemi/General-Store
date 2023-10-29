@@ -1,0 +1,145 @@
+/* -------cardCart------ */
+.cardCart {
+    @apply
+    bg-blue-200
+    flex
+    justify-between
+    items-center
+    h-24 md:h-32
+    w-full 
+    overflow-hidden
+    px-3
+    py-2
+    shadow-cartHome
+    my-2
+    rounded-md
+}
+
+/* --------cardCartImage----- */
+.cardCartImage {
+    @apply
+    w-2/6
+    h-full
+    flex
+    items-center
+}
+
+.cardCartImage img {
+    box-shadow: 0 0 2px 3px #c3c3ff ,1px 1px 8px 4px #111 ;
+    @apply
+    w-5/6
+    h-5/6
+    rounded-full
+}
+
+/* -------cardCartFields------ */
+.cardCartFields {
+    @apply
+    flex
+    flex-col
+    justify-between
+    items-end
+    h-full
+    w-4/6
+}
+
+/* -------cardCartField1------ */
+.cardCartField1 {
+    @apply
+    w-full
+    flex
+    justify-between
+    items-center
+}
+
+.cardCartField1 h2 {
+    @apply
+    font-bold
+}
+
+.cardCartField1 span:nth-child(1) {
+    @apply
+    text-white
+    px-1
+    bg-red-500
+    rounded-xl
+    mr-2
+    text-sm
+}
+
+.cardCartField1 span:nth-child(2) {
+    @apply
+    line-through
+    text-xs
+}
+
+.cardCartField1 div {
+    @apply
+    flex
+}
+
+/* -------cardCartField2------ */
+.cardCartField2 {
+    @apply
+    w-full
+    flex
+    justify-between
+    items-center
+}
+
+.cardCartField2 span:nth-child(1) {
+    @apply
+    inline-flex
+    items-center
+}
+
+.cardCartField2 img {
+    @apply
+    w-5
+    drop-shadow-lg
+}
+
+.cardCartField2 span:nth-child(2) {
+    @apply
+    text-green-600
+    font-semibold
+}
+/* -------cardCartField3------ */
+.cardCartField3 {
+    @apply
+    w-full
+    h-5
+}
+
+.productDetailsField3Buttons {
+    @apply
+    w-4/6
+    h-full
+    m-auto
+    flex
+    justify-evenly
+    items-center
+}
+
+.productDetailsField3Buttons button {
+    line-height: 8px;
+    @apply
+    w-12
+    h-full
+    bg-blue-700
+    text-white
+    rounded-md
+    animate-ShowButton2
+}
+
+.productDetailsField3Buttons img {
+    @apply
+    w-full
+    h-4
+}
+
+.productDetailsField3Buttons span {
+    border-bottom: 1px solid blue;
+    @apply
+    px-2
+}

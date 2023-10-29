@@ -1,0 +1,132 @@
+.cart {
+    height: calc( 100vh - 84px );
+    @apply
+    flex
+    flex-col md:flex-row
+    justify-start
+    items-center
+    md:p-4
+}
+
+/* ------cartHeader------ */
+.cartHeader {
+    @apply
+    w-11/12
+    mx-auto
+    my-2
+    flex md:hidden
+    justify-between
+    items-center
+    px-1
+    animate-ShowButton2
+}
+
+.cartHeader img {
+    @apply
+    w-8
+    h-8
+}
+
+.cartHeader h2 {
+    @apply
+    text-white
+    text-3xl
+}
+
+/* -------cartProducts------- */
+.cartProducts {
+    box-shadow: 0 0 8px 1px #c7c6e8 inset;
+    @apply
+    w-11/12
+    h-3/6 md:h-4/6
+    overflow-auto
+    rounded-md
+    px-2
+    animate-ShowButton1
+    md:px-4 
+}
+
+.cartProducts::-webkit-scrollbar {
+    @apply
+    w-1 md:w-2
+}
+
+.cartProducts::-webkit-scrollbar-thumb {
+    background: rgb(0, 47, 142);
+    border-radius: 50px;
+}
+
+/* ---------cartFields-------- */
+.cartFields {
+    @apply
+    w-11/12
+    px-2
+    flex
+    flex-col
+    justify-start
+    items-center
+    animate-ShowButton2
+}
+
+.cartFields h4 {
+    @apply
+    font-medium
+    text-white
+}
+
+.cartField1,
+.cartField2,
+.cartField3 {
+    @apply
+    w-full
+    flex
+    justify-between
+    items-center
+    py-3
+}
+
+/* ---------cartField1-------- */
+.cartField1 span {
+    @apply
+    text-white
+}
+
+/* ---------cartField2-------- */
+.cartField2 {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+.cartField2 span {
+    @apply
+    text-white
+}
+
+/* ---------cartField3-------- */
+.cartField3 span {
+    @apply
+    text-green-600
+    font-medium
+}
+
+/* ---------cartField4-------- */
+.cartField4 {
+    color: ;
+    @apply
+    w-11/12
+    m-auto
+    flex
+    justify-center
+}
+
+.cartField4 button {
+    @apply
+    text-white
+    bg-green-700 md:hover:bg-green-600
+    p-1
+    rounded-md
+    m-auto
+    w-40
+    transition-all
+    animate-ShowButton1
+}

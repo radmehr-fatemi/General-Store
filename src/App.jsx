@@ -10,6 +10,7 @@ import HomePage from './components/home/HomePage';
 import Layout from './components/layout/index';
 import SideBar from './components/sidebar/SideBar';
 import ProductDetails from './components/details/ProductDetails';
+import Cart from './components/cart/cart';
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         <Layout>
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/cart' element={<HomePage />} />
+            <Route path='/cart' element={<Cart />} />
             <Route path='/list' element={<HomePage />} />
             <Route path='/details/:id' element={<ProductDetails />} />
           </Routes>

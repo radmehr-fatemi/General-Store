@@ -1,5 +1,8 @@
 import React, { createContext, useReducer } from 'react';
 
+//function
+import { totalCounter } from '../components/shared/function';
+
 export const CartContext = createContext();
 
 const initialState = {
@@ -10,7 +13,7 @@ const initialState = {
 };
 
 const reducer = (state, action) => {
-    console.log(state.selectedItems)
+    console.log(state)
     switch (action.type) {
         case "ADD_ITEM":
             if (!state.selectedItems.some(item => item.id === action.payload.id)) {
@@ -23,17 +26,19 @@ const reducer = (state, action) => {
                 ...state,
                 selectedItems: [...state.selectedItems],
                 checkout: false,
+                ...totalCounter(state)
             }
 
         case "INCREMENT":
             if (state.selectedItems?.some(item => item.id === action.payload.id)) {
                 const itemI = state.selectedItems.find(item => item.id === action.payload.id);
-                itemI.quantity <= action.payload.stock && itemI.quantity++
+                itemI.quantity < action.payload.stock && itemI.quantity++
             }
             return {
                 ...state,
                 selectedItems: [...state.selectedItems],
                 checkout: false,
+                ...totalCounter(state)
             }
 
         case "DECREMENT":
@@ -45,6 +50,7 @@ const reducer = (state, action) => {
                 ...state,
                 selectedItems: [...state.selectedItems],
                 checkout: false,
+                ...totalCounter(state)
             }
 
         case "REMOVE_ITEM":
@@ -56,6 +62,7 @@ const reducer = (state, action) => {
                 ...state,
                 selectedItems: [...state.selectedItems],
                 checkout: false,
+                ...totalCounter(state)
             }
 
         case "CLEAR":
