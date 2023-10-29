@@ -32,13 +32,13 @@ const Cart = () => {
             <div className={styled.cartProducts} >
                 {
                     
-                    !state.selectedItems.length && !state.checkout ?
+                    state.itemsCounter == 0 && state.checkout ?
                     <div className='w-full h-full flex flex-col justify-center items-center animate-ShowScrollTop' >
                         <p className='text-white' >Payment was success</p>
                         <Link to="/" className='text-green-400 border border-green-400 text-sm px-2 rounded-md mt-2' >Continue shopping</Link>
                     </div> :
 
-                    !state.selectedItems.length && state.checkout ?
+                    state.itemsCounter == 0   ?
                     <div>
                         <SpinnerEmpty />
                     </div> :
@@ -65,9 +65,9 @@ const Cart = () => {
 
                 <div className={styled.cartField4} >
                     {
-                        state.checkout ?
-                            <button type='disable' style={{ background: "rgb(74, 108, 74)" }} >Checkout d</button> :
-                            <button onClick={ () => dispatch({ type: "CHECKOUT" }) } >Checkout</button>
+                        state.itemsCounter ?
+                        <button onClick={ () => dispatch({ type: "CHECKOUT" }) } >Checkout</button> :
+                            <button type='disable' style={{ background: "rgb(74, 108, 74)" }} >Checkout d</button> 
                     }
                 </div>
             </div>

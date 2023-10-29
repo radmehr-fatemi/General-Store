@@ -10,13 +10,13 @@ const SpinnerEmpty = () => {
                 height={100}
                 width={100}
                 radius={5}
-                color="#4fa94d"
+                color="#ffff"
                 ariaLabel="ball-triangle-loading"
                 wrapperClass={{}}
                 wrapperStyle=""
                 visible={true}
             />
-            <Link className='text-green-100 border px-2 rounded-md mt-6' to="/" >Go to store</Link>
+            <Link className='text-green-300 border border-green-300 px-2 rounded-md mt-6' to="/" >Go to store</Link>
         </div>
     );
 };
