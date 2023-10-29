@@ -12,6 +12,7 @@
     items-center
     animate-ShowScroll
     md:hidden
+    z-50
 }
 
 .sideBar img {

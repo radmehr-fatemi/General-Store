@@ -41,6 +41,8 @@ const CardCart = ({ product }) => {
 
                 <div className={styled.cardCartField3} >
                     {
+                        findQuantity(id, state.selectedItems) === 0 ? 
+                        <button onClick={ () => dispatch({ type: "ADD_ITEM" ,payload: product }) } >Add to cat</button> :
                         <div className={styled.productDetailsField3Buttons} >
                             {findQuantity(id, state.selectedItems) > 0 && <button onClick={() => dispatch({ type: "INCREMENT", payload: product })} >+</button>}
                             <span> {findQuantity(id, state.selectedItems)} </span>

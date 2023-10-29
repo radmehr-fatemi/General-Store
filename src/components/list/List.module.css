@@ -1,0 +1,28 @@
+.list {
+    @apply
+    flex
+    flex-col
+    justify-start
+    items-center
+    h-screen
+    relative
+}
+
+.list h1 {
+    @apply
+    text-white
+    text-2xl
+    border-b
+    border-white
+    pb-2
+    w-4/6
+    text-center
+    animate-ShowScrollTop
+}
+
+.list a {
+    @apply
+    text-white
+    py-1
+    animate-Show
+}
