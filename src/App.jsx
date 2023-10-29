@@ -10,7 +10,7 @@ import HomePage from './components/home/HomePage';
 import Layout from './components/layout/index';
 import SideBar from './components/sidebar/SideBar';
 import ProductDetails from './components/details/ProductDetails';
-import Cart from './components/cart/cart';
+import Cart from './components/cart/Cart';
 
 const App = () => {
   return (
