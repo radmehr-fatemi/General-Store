@@ -1,0 +1,14 @@
+.search {
+    @apply
+    absolute
+    top-12
+    right-0
+    w-full
+    h-screen
+    m-auto
+    px-2
+    bg-blue-800
+    bg-opacity-50
+    overflow-scroll
+    animate-ShowScroll
+}

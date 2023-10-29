@@ -23,7 +23,7 @@ const List = () => {
             <h1>Categories</h1>
             <Outlet />
             {
-                categories.map( ( category ,index ) => <Link to={`${category}`} key={index} > { category } </Link> )
+                categories.map( ( category ,index ) => <Link onClick={ () => scroll(0 ,0) } to={`${category}`} key={index} > { category } </Link> )
             }
         </div>
     }
