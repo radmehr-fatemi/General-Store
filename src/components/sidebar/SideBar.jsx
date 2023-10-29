@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 //Style
 import styled from "./SideBar.module.css";
+
+//Context
+import { CartContext } from '../../context/CartContextProvider';
 
 //SVG
 import homeSVG from "../../assets/svg/home.svg"
@@ -15,6 +18,7 @@ import listFocusSVG from "../../assets/svg/list-focus.svg"
 const SideBar = () => {
 
     const { pathname } = useLocation();
+    const { state } = useContext( CartContext );
 
     return (
         <div className={styled.sideBar} >

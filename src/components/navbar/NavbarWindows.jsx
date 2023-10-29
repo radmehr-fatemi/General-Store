@@ -6,6 +6,7 @@ import styled from "./NavbarWindows.module.css";
 
 //SVG
 import cartSVG from "../../assets/svg/cart.svg";
+import searchSVG from "../../assets/svg/search.svg";
 
 const NavbarWindows = () => {
     return (
@@ -14,6 +15,7 @@ const NavbarWindows = () => {
             <div className={styled.navbarField1} >
                 <Link to="/" >Home</Link>
                 <Link to="/list" >List</Link>
+                <Link to="/searchwindows" ><img src={ searchSVG } alt="search photo" className='w-8 hover:w-9 transition-all' /></Link>
             </div>
 
             <div className={ styled.navbarField2 } >

@@ -14,6 +14,7 @@ import ProductDetails from './components/details/ProductDetails';
 import Cart from './components/cart/Cart';
 import List from './components/list/List';
 import Category from './components/category/Category';
+import SearchWindows from './components/search/SearchWindows';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
                 <Route path=':category' element={<Category />} />
               </Route>
               <Route path='/details/:id' element={<ProductDetails />} />
+              <Route path='/searchwindows' element={<SearchWindows />} />
             </Routes>
           </Layout>
           <SideBar />

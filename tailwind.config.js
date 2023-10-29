@@ -39,7 +39,6 @@ export default {
         ShowButton3: {
           "0%": { width: "0px" }
         },
-
       },
 
       animation: {

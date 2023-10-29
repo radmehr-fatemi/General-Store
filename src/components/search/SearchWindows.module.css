@@ -1,0 +1,24 @@
+.searchWindows {
+    @apply
+    h-screen
+    flex
+    flex-row-reverse
+    justify-center
+    items-start
+    p-4
+    relative
+}
+
+.searchWindows input {
+    @apply
+    w-3/6
+    rounded-lg
+    p-1
+    outline-none
+}
+
+.searchWindows img:nth-child(2) {
+    @apply
+    w-6
+    mr-2
+}
